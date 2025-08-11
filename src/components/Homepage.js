@@ -44,25 +44,29 @@ const Home = () => {
               </a>
             ))}
             <div className="relative" ref={dropdownRef}>
-              <button
-                onClick={() => setShowDropdown(!showDropdown)}
-                className="nav-link"
-              >
-                Login
-              </button>
-              {showDropdown && (
-                <div className="dropdown-menu">
-                  {["User", "Admin"].map((role) => (
-                    <a
-                      key={role}
-                      href={`/login/${role.toLowerCase().replace(" ", "")}`}
-                    >
-                      {role}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
+  <button
+    type="button"
+    className="nav-link"
+    onClick={(e) => {
+      e.preventDefault(); // ✅ prevent accidental navigation
+      setShowDropdown((prev) => !prev);
+    }}
+  >
+    Login ▾
+  </button>
+
+  {showDropdown && (
+    <div className="dropdown-menu">
+      <a href="/login/user" onClick={(e) => e.stopPropagation()}>
+        User
+      </a>
+      <a href="/login/admin" onClick={(e) => e.stopPropagation()}>
+        Admin
+      </a>
+    </div>
+  )}
+</div>
+
           </nav>
         </div>
       </header>
