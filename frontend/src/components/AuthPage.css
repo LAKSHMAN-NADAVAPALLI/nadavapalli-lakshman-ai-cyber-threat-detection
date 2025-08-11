@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-page {
+  background: #ff4b2b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-box {
+  contain: layout;
+  display: flex;
+  width: 900px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.auth-left-panel {
+  flex: 1;
+  background: #ff416c;
+  color: #fff;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-left-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.auth-left-panel p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.auth-left-panel button {
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-left-panel button:hover {
+  background-color: #fff;
+  color: #ff416c;
+}
+
+.auth-right-panel {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-right-panel h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.auth-right-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-right-panel input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  transition: border 0.2s ease;
+}
+
+.auth-right-panel input:focus {
+  border-color: #ff6a00;
+  outline: none;
+}
+
+.auth-right-panel button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6a00;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-right-panel button:hover {
+  background-color: #e65c00;
+}
+
+.auth-msg {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #333;
+  text-align: center;
+}

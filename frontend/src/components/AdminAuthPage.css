@@ -1,0 +1,116 @@
+.admin-auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1a2a44; /* Simplified */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-auth-card {
+  contain: layout;
+  display: flex;
+  width: 900px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+.admin-auth-left {
+  flex: 1;
+  background: #203a43;
+  color: white;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-auth-left h2 {
+  font-size: 2rem; /* Slightly smaller */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.admin-auth-left p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.admin-auth-left button {
+  padding: 8px 25px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease; /* Faster transition */
+}
+
+.admin-auth-left button:hover {
+  background-color: white;
+  color: #203a43;
+}
+
+.admin-auth-right {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.admin-auth-right h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.admin-auth-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-auth-right input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.admin-auth-right input:focus {
+  border-color: #243b55;
+}
+
+.admin-auth-right button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #243b55;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.admin-auth-right button:hover {
+  background-color: #141e30;
+}
+
+.admin-auth-message {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #e63946;
+  margin-top: 10px;
+}
